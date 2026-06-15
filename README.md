@@ -1,12 +1,16 @@
 # Vibecoding
 
-A repository for vibecoding experiments. This project explores the actual capabilities of vibecoding, pushes the boundaries of this approach, and investigates how AI technology can be integrated into my development workflow.
+This is a repository for my vibecoding experiments. This project explores the actual capabilities of vibecoding, pushes the boundaries of this approach, and investigates how AI technology can be integrated into my development workflow.
 
 ## Tech Stack
 
-- **Backend**: [Ollama](https://ollama.ai/)
+- **Backend**: [Ollama](https://ollama.ai/) running in [Podman](https://podman.io/)
 - **Model**: [Qwen3.6-27b](https://ollama.com/library/qwen3.6:27b)
 - **Plugin**: [Cline](https://github.com/cline/cline) for [VSCodium](https://github.com/VSCodium/vscodium)
+
+## Web Page
+
+- [GitHub Pages Landing Page](https://tsb99x.github.io/vibecoding/) — Root `index.html` serving as a subprojects menu, hosted via GitHub Pages.
 
 ## Documentation
 

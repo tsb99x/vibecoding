@@ -1,6 +1,6 @@
 # AGENTS.md — Root Directory
 
-This is the root of the repository. It does not contain a standalone project itself.
+This is the root of the repository. It contains the GitHub Pages landing page (`index.html`) and links to the subprojects.
 
 ## Subprojects
 
