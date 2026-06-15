@@ -10,6 +10,16 @@ A repository for vibecoding experiments. This project explores the actual capabi
 
 ## Documentation
 
+- [AGENTS.md](AGENTS.md) - Agent guide for the repository structure and subprojects navigation.
+
+## Subprojects
+
+| Subproject | Description |
+|------------|-------------|
+| [`tldr/`](tldr/) | Linux TLDR Commands single-page web application |
+
+## Articles
+
 - [How to Run Ollama in Podman](https://tsb99x.github.io/notes/ollama-in-podman.html) - My own article on running Ollama within a Podman container, published on my blog.
 
 ## Workflow
