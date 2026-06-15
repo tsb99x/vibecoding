@@ -30,6 +30,7 @@ This is a repository for my vibecoding experiments. This project explores the ac
 
 | Subproject | Description |
 |------------|-------------|
+| [`cue-builder/`](cue-builder/) | CUE File Builder web application |
 | [`tldr/`](tldr/) | Linux TLDR Commands single-page web application |
 
 ## Articles
