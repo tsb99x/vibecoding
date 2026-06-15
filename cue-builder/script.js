@@ -22,18 +22,14 @@ function parseTimestamp(ts) {
 
 /**
  * Converts total seconds to CUE MSF format string (MM:SS:FF).
- * Frames are at 75 per second, so fractional seconds map to frames.
- * @param {number} totalSeconds - Total seconds from start (may include decimals).
+ * @param {number} totalSeconds - Total seconds from start.
  * @returns {string} Formatted MSF string like "05:45:00".
  */
 function secondsToMSF(totalSeconds) {
     const minutes = Math.floor(totalSeconds / 60);
     const seconds = Math.floor(totalSeconds % 60);
-    // Calculate frames from fractional seconds (75 frames per second)
-    const frames = Math.round((totalSeconds % 1) * 75);
     return String(minutes).padStart(2, '0') + ':' +
-           String(seconds).padStart(2, '0') + ':' +
-           String(frames).padStart(2, '0');
+           String(seconds).padStart(2, '0') + ':00';
 }
 
 /**

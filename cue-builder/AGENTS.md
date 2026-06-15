@@ -21,7 +21,7 @@ A web application that converts timestamp lists into valid CUE sheet files.
 ### CUE Output Constraints
 - Generate valid CUE sheet format with MSF (Minutes:Seconds:Frames) timestamps.
 - MSF must use `:` as separator in `MM:SS:FF` format (e.g., `05:45:00`).
-- Frames are calculated at **75 frames per second** (1 frame = 1/75 of a second). Fractional seconds map to frames via `Math.round(fractionalSeconds * 75)`.
+- Frames are calculated at **75 frames per second** (1 frame = 1/75 of a second).
 - The CUE `FILE` line must only include the filename (with extension), **no file type keyword** appended (e.g., `FILE "audio.wav"` not `FILE "audio.wav" WAV`).
 - Each parsed line becomes a single TRACK entry.
 
