@@ -30,6 +30,7 @@ This is a repository for my vibecoding experiments. This project explores the ac
 
 | Subproject | Description |
 |------------|-------------|
+| [`bonds-profitability/`](bonds-profitability/) | Bond Profitability Calculator single-page web application |
 | [`cue-builder/`](cue-builder/) | CUE File Builder web application |
 | [`tldr/`](tldr/) | Linux TLDR Commands single-page web application |
 

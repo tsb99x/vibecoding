@@ -8,6 +8,7 @@ Each subfolder is an independent project with its own `AGENTS.md` that describes
 
 | Subproject | Description |
 |------------|-------------|
+| `bonds-profitability/` | Bond Profitability Calculator single-page web application |
 | `cue-builder/` | CUE File Builder web application |
 | `tldr/` | Linux TLDR Commands single-page web application |
 
