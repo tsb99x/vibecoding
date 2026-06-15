@@ -13,3 +13,7 @@ Each subfolder is an independent project with its own `AGENTS.md` that describes
 ## Agent Instructions
 
 Before making any changes, **always look into the relevant subproject's `AGENTS.md`** for detailed context, file structure, coding conventions, and constraints. The root `AGENTS.md` only serves as a navigation guide.
+
+## Commit Details
+
+- Commit details should be a list denoted with `-`.
