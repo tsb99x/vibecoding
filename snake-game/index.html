@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <a href="../index.html" class="btn btn-back">← Back to Main Page</a>
+        <header>
+            <h1>Snake Game</h1>
+            <div class="score-board">
+                <span class="score-label">Score:</span>
+                <span id="score" class="score-value">0</span>
+            </div>
+        </header>
+
+        <div class="game-wrapper">
+            <canvas id="gameCanvas" width="500" height="500"></canvas>
+
+            <div id="gameOverOverlay" class="overlay hidden">
+                <div class="overlay-content">
+                    <h2>Game Over</h2>
+                    <p class="final-score-label">Final Score</p>
+                    <p id="finalScore" class="final-score-value">0</p>
+                    <button id="restartButton" class="btn btn-primary">Play Again</button>
+                </div>
+            </div>
+
+            <div id="startOverlay" class="overlay">
+                <div class="overlay-content">
+                    <h2>Snake Game</h2>
+                    <p class="instructions">Use arrow keys or WASD to move</p>
+                    <p class="instructions">Press Space or P to pause</p>
+                    <button id="startButton" class="btn btn-primary">Start Game</button>
+                </div>
+            </div>
+
+            <div id="pauseOverlay" class="overlay hidden">
+                <div class="overlay-content">
+                    <h2>Paused</h2>
+                    <button id="resumeButton" class="btn btn-primary">Resume</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button id="pauseButton" class="btn btn-secondary" disabled>Pause</button>
+            <button id="resetButton" class="btn btn-secondary" disabled>Reset</button>
+        </div>
+
+        <footer>
+            <p>Eat food to grow and score points. Don't hit the walls or yourself!</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
