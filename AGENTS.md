@@ -18,6 +18,10 @@ Each subfolder is an independent project with its own `AGENTS.md` that describes
 
 Before making any changes, **always look into the relevant subproject's `AGENTS.md`** for detailed context, file structure, coding conventions, and constraints. The root `AGENTS.md` only serves as a navigation guide.
 
+### General Behavior
+
+- **Be concise**: Respond directly and technically. Avoid unnecessary conversation, filler phrases, or repeated summaries unless explicitly requested.
+
 ### Common Requirements for All Subprojects
 
 - Each subproject page must include a **"Back to Main Page"** button that links to `../index.html` (or `index.html` if at root level), allowing users to navigate back to the main landing page.

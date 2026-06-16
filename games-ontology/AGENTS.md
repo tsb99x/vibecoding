@@ -40,6 +40,12 @@ games-ontology/
 - Minimum width of 30 units ensures readability for very short labels
 - No type-specific width multipliers (all attribute types use the same formula)
 
+### Force Simulation Parameters
+- **Link distance**: 140 units between connected nodes to maintain sparse, readable layout
+- **Charge repulsion strength**: `-700` for game nodes, `-350` for attribute nodes
+- Collision radii are calculated from content size via `getCollisionRadius()`
+- Center force strength: 0.05; X/Y positioning forces: 0.02
+
 ### Data Model
 - Games have: name, year, genre(s), studio, publisher, engine, game mode, features
 - Attribute types: `game`, `genre`, `year`, `studio`, `publisher`, `engine`, `gamemode`, `feature`
