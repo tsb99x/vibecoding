@@ -34,6 +34,7 @@ This is a repository for my vibecoding experiments. This project explores the ac
 | [`cue-builder/`](cue-builder/) | CUE File Builder web application |
 | [`snake-game/`](snake-game/) | Classic Snake Game single-page web application |
 | [`tldr/`](tldr/) | Linux TLDR Commands single-page web application |
+| [`games-ontology/`](games-ontology/) | Games Ontology interactive knowledge graph visualizing game relationships |
 
 ## Articles
 

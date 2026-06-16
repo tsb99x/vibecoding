@@ -12,6 +12,7 @@ Each subfolder is an independent project with its own `AGENTS.md` that describes
 | `cue-builder/` | CUE File Builder web application |
 | `snake-game/` | Classic Snake Game single-page web application |
 | `tldr/` | Linux TLDR Commands single-page web application |
+| `games-ontology/` | Games Ontology interactive knowledge graph visualizing game relationships |
 
 ## Agent Instructions
 
