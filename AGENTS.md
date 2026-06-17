@@ -13,6 +13,7 @@ Each subfolder is an independent project with its own `AGENTS.md` that describes
 | `snake-game/` | Classic Snake Game single-page web application |
 | `tldr/` | Linux TLDR Commands single-page web application |
 | `games-ontology/` | Games Ontology interactive knowledge graph visualizing game relationships |
+| `flash-cards/` | Chinese language learning flashcards for HSK vocabulary |
 
 ## Agent Instructions
 
@@ -24,6 +25,7 @@ Before making any changes, **always look into the relevant subproject's `AGENTS.
 
 ### Common Requirements for All Subprojects
 
+- Each subproject must have a `README.md` describing its purpose, features, and usage.
 - Each subproject page must include a **"Back to Main Page"** button that links to `../index.html` (or `index.html` if at root level), allowing users to navigate back to the main landing page.
 - Each subproject must be mentioned in the root's `README.md`.
 - Each subproject must be linked by a card on the root's `index.html`.

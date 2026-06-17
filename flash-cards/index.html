@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flash Cards — Chinese Vocabulary</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="top-nav">
+    <a href="../index.html" class="back-link">← Back to main page</a>
+  </nav>
+  <div class="container">
+    <header>
+      <h1>Flash Cards</h1>
+      <p class="subtitle">Chinese Vocabulary — HSK 1</p>
+    </header>
+
+    <!-- Controls -->
+    <div class="controls">
+      <input type="text" id="search-input" placeholder="Search cards...">
+      <button id="shuffle-btn" title="Shuffle cards">🔀 Shuffle</button>
+    </div>
+
+    <!-- Progress -->
+    <div class="progress">
+      <span id="card-counter">1 / 2</span>
+    </div>
+
+    <!-- Card -->
+    <div class="card-scene" id="card-scene">
+      <div class="card" id="card">
+        <div class="card-face card-front" id="card-front">
+          <span class="chinese" id="chinese-text"></span>
+        </div>
+        <div class="card-face card-back" id="card-back">
+          <span class="pinyin" id="pinyin-text"></span>
+          <span class="english" id="english-text"></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <div class="navigation">
+      <button id="prev-btn" title="Previous card (←)">◀ Prev</button>
+      <span class="flip-hint">Click card to flip · ← → to navigate</span>
+      <button id="next-btn" title="Next card (→)">Next ▶</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
