@@ -14,6 +14,7 @@ Each subfolder is an independent project with its own `AGENTS.md` that describes
 | `tldr/` | Linux TLDR Commands single-page web application |
 | `games-ontology/` | Games Ontology interactive knowledge graph visualizing game relationships |
 | `flash-cards/` | Chinese language learning flashcards for HSK vocabulary |
+| `arkanoid/` | Classic Arkanoid (brick breaker) single-page web application |
 
 ## Agent Instructions
 

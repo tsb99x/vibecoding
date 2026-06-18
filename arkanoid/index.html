@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arkanoid</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Arkanoid</h1>
+      <nav>
+        <a href="../index.html" class="back-btn">← Back to Main Page</a>
+      </nav>
+    </header>
+
+    <div class="game-wrapper">
+      <div class="game-info">
+        <div class="info-item">
+          <span class="label">Score:</span>
+          <span id="score">0</span>
+        </div>
+        <div class="info-item">
+          <span class="label">Lives:</span>
+          <span id="lives">3</span>
+        </div>
+        <div class="info-item">
+          <span class="label">Level:</span>
+          <span id="level">1</span>
+        </div>
+      </div>
+
+      <canvas id="gameCanvas" width="480" height="600"></canvas>
+
+      <div class="controls">
+        <button id="startBtn">Start</button>
+        <button id="pauseBtn" disabled>Pause</button>
+        <button id="restartBtn" style="display: none;">Restart</button>
+      </div>
+    </div>
+
+    <div id="overlay" class="overlay" style="display: none;">
+      <div class="overlay-content">
+        <h2 id="overlayTitle">Game Over</h2>
+        <p id="overlayMessage"></p>
+        <button id="overlayRestartBtn">Play Again</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

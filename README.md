@@ -36,6 +36,7 @@ This is a repository for my vibecoding experiments. This project explores the ac
 | [`tldr/`](tldr/) | Linux TLDR Commands single-page web application |
 | [`games-ontology/`](games-ontology/) | Games Ontology interactive knowledge graph visualizing game relationships |
 | [`flash-cards/`](flash-cards/) | Chinese language learning flashcards for HSK vocabulary |
+| [`arkanoid/`](arkanoid/) | Classic Arkanoid (brick breaker) single-page web application |
 
 ## Articles
 
