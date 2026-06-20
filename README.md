@@ -13,10 +13,10 @@ This is a repository for my vibecoding experiments. This project explores the ac
 
 ## Tech Stack
 
-- **Backend**: [Ollama](https://ollama.ai/) with ROCm on Sapphire Pulse RX 7900 XTX (24G VRAM), running in [Podman](https://podman.io/) on Debian Trixie
+- **Backend**: [llama.cpp](https://github.com/ggml-org/llama.cpp) (Vulkan backend) on Sapphire Pulse RX 7900 XTX (24G VRAM), managed via [llama-swap](https://github.com/mostlygeek/llama-swap), on Debian Trixie
 - **GPU Tuning**: [LACT](https://github.com/ilya-zlobintsev/LACT) is used to limit GPU clocks to 1929 MHz and fan speed to 40% for reduced noise
-- **Model**: [Qwen3.6-27b](https://ollama.com/library/qwen3.6:27b) running with 64k context window
-- **Plugin**: [Cline](https://github.com/cline/cline) for [VSCodium](https://github.com/VSCodium/vscodium)
+- **Model**: [Qwen3.6-27B-GGUF](https://huggingface.co/unsloth/Qwen3.6-27B-GGUF) (Unsloth version) running with 64k context window
+- **AI Agent**: [OpenCode](https://github.com/anomalyco/opencode)
 
 ## Web Page
 
@@ -39,16 +39,12 @@ This is a repository for my vibecoding experiments. This project explores the ac
 | [`arkanoid/`](arkanoid/) | Classic Arkanoid (brick breaker) single-page web application |
 | [`text-adventure/`](text-adventure/) | Click-choice text adventure set on a damaged space station |
 
-## Articles
-
-- [How to Run Ollama in Podman](https://tsb99x.github.io/notes/ollama-in-podman.html) - My own article on running Ollama within a Podman container, published on my blog.
-
 ## Workflow
 
 This repository follows a hands-off file editing approach:
 
 - **Ideas & Prompts**: All project ideas and prompts are my own, originating from old unfinished or dropped projects, or even projects I deemed not viable to research into at all.
-- **File Editing**: All code files are edited exclusively by the AI model via the Cline plugin. This includes this README.md.
+- **File Editing**: All code files are edited exclusively by the AI model via OpenCode. This includes this README.md.
 - **Filesystem Management**: I manually manage the filesystem from time to time, including adding example files to subproject directories (e.g., `cue-builder/examples/`).
 - **AI-Assisted Analysis**: AI is used in my workflow to extract summaries and metadata from example artifacts (e.g., analyzing CUE output, generating example inputs, or documenting patterns).
 - **Review**: I perform a thorough review of everything that is generated before it is committed.
