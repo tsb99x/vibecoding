@@ -15,6 +15,7 @@ Each subfolder is an independent project with its own `AGENTS.md` that describes
 | `games-ontology/` | Games Ontology interactive knowledge graph visualizing game relationships |
 | `flash-cards/` | Chinese language learning flashcards for HSK vocabulary |
 | `arkanoid/` | Classic Arkanoid (brick breaker) single-page web application |
+| `text-adventure/` | Click-choice text adventure set on a damaged space station |
 
 ## Agent Instructions
 

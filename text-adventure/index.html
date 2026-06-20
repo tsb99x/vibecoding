@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Adventure — Space Station</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="top-nav">
+        <a href="../index.html" class="back-link">← Back to main page</a>
+    </nav>
+    <div class="container">
+        <header>
+            <h1>Space Station</h1>
+            <p class="subtitle">A Text Adventure</p>
+        </header>
+
+        <div id="startScreen" class="screen">
+            <div class="terminal">
+                <div class="terminal-header">
+                    <span class="terminal-dot red"></span>
+                    <span class="terminal-dot yellow"></span>
+                    <span class="terminal-dot green"></span>
+                    <span class="terminal-title">STATION TERMINAL v2.7.1</span>
+                </div>
+                <div class="terminal-body">
+                    <p class="boot-text">Initializing cryo-system diagnostics...</p>
+                    <p class="boot-text">WARNING: Multiple system failures detected.</p>
+                    <p class="boot-text">Life support: COMPROMISED</p>
+                    <p class="boot-text">Power: CRITICAL</p>
+                    <p class="boot-text">Hull integrity: 62%</p>
+                    <p class="boot-text">&nbsp;</p>
+                    <p class="boot-text">Crew status: UNKNOWN</p>
+                    <p class="boot-text">You are the only surviving crew member.</p>
+                    <p class="boot-text">&nbsp;</p>
+                    <button id="startButton" class="btn btn-primary">Begin Adventure</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="gameScreen" class="screen hidden">
+            <div class="game-layout">
+                <div class="game-sidebar">
+                    <div class="sidebar-panel">
+                        <h3>Status</h3>
+                        <div class="status-bar">
+                            <span class="status-label">Health</span>
+                            <div class="health-bar-container">
+                                <div id="healthBar" class="health-bar"></div>
+                            </div>
+                            <span id="healthValue" class="health-value">100%</span>
+                        </div>
+                    </div>
+                    <div class="sidebar-panel">
+                        <h3>Inventory</h3>
+                        <ul id="inventoryList" class="inventory-list">
+                        </ul>
+                        <span id="inventoryEmpty" class="inventory-empty">Empty</span>
+                    </div>
+                </div>
+                <div class="game-main">
+                    <div class="terminal">
+                        <div class="terminal-header">
+                            <span class="terminal-dot red"></span>
+                            <span class="terminal-dot yellow"></span>
+                            <span class="terminal-dot green"></span>
+                            <span id="roomTitle" class="terminal-title">CRYO BAY</span>
+                        </div>
+                        <div class="terminal-body">
+                            <div id="narrative" class="narrative"></div>
+                            <div id="choices" class="choices"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="endingScreen" class="screen hidden">
+            <div class="terminal">
+                <div class="terminal-header">
+                    <span class="terminal-dot red"></span>
+                    <span class="terminal-dot yellow"></span>
+                    <span class="terminal-dot green"></span>
+                    <span id="endingTitle" class="terminal-title">ENDING</span>
+                </div>
+                <div class="terminal-body">
+                    <div id="endingNarrative" class="narrative"></div>
+                    <div id="endingStats" class="ending-stats"></div>
+                    <button id="restartButton" class="btn btn-primary">Play Again</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
