@@ -35,3 +35,4 @@ Before making any changes, **always look into the relevant subproject's `AGENTS.
 ## Commit Details
 
 - Commit details should be a list denoted with `-`.
+- Each commit message must start with a type prefix: `feat:`, `fix:`, `docs:`, `refactor:`, `style:`, `test:`, `chore:`, etc.
