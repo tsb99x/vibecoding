@@ -1,31 +1,31 @@
 /* Catppuccin Mocha Palette */
 :root {
-    --base: #1e1e2e;
-    --mantle: #181825;
-    --crust: #11111b;
-    --surface0: #313244;
-    --surface1: #45475a;
-    --surface2: #585b70;
-    --overlay0: #6c7086;
-    --overlay1: #7f849c;
-    --overlay2: #9399b2;
-    --subtext0: #a6adc8;
-    --subtext1: #bac2de;
-    --text: #cdd6f4;
-    --rosewater: #f5e0dc;
-    --flamingo: #f2cdcd;
-    --pink: #f5c2e7;
-    --mauve: #cba6f7;
-    --red: #f38ba8;
-    --maroon: #eba0ac;
-    --peach: #fab387;
-    --yellow: #f9e2af;
-    --green: #a6e3a1;
-    --teal: #94e2d5;
-    --sky: #89dceb;
-    --sapphire: #74c7ec;
-    --blue: #89b4fa;
-    --lavender: #b4befe;
+    --ctp-base: #1e1e2e;
+    --ctp-mantle: #181825;
+    --ctp-crust: #11111b;
+    --ctp-surface0: #313244;
+    --ctp-surface1: #45475a;
+    --ctp-surface2: #585b70;
+    --ctp-overlay0: #6c7086;
+    --ctp-overlay1: #7f849c;
+    --ctp-overlay2: #9399b2;
+    --ctp-subtext0: #a6adc8;
+    --ctp-subtext1: #bac2de;
+    --ctp-text: #cdd6f4;
+    --ctp-rosewater: #f5e0dc;
+    --ctp-flamingo: #f2cdcd;
+    --ctp-pink: #f5c2e7;
+    --ctp-mauve: #cba6f7;
+    --ctp-red: #f38ba8;
+    --ctp-maroon: #eba0ac;
+    --ctp-peach: #fab387;
+    --ctp-yellow: #f9e2af;
+    --ctp-green: #a6e3a1;
+    --ctp-teal: #94e2d5;
+    --ctp-sky: #89dceb;
+    --ctp-sapphire: #74c7ec;
+    --ctp-blue: #89b4fa;
+    --ctp-lavender: #b4befe;
     --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -36,8 +36,8 @@
 }
 
 body {
-    background-color: var(--base);
-    color: var(--text);
+    background-color: var(--ctp-base);
+    color: var(--ctp-text);
     font-family: var(--font-family);
     min-height: 100vh;
     display: flex;
@@ -49,22 +49,22 @@ body {
 
 .top-nav {
     width: 100%;
-    background-color: var(--mantle);
+    background-color: var(--ctp-mantle);
     padding: 0.75rem 1rem;
     display: flex;
     justify-content: center;
-    border-bottom: 1px solid var(--surface1);
+    border-bottom: 1px solid var(--ctp-surface1);
 }
 
 .back-link {
-    color: var(--blue);
+    color: var(--ctp-blue);
     text-decoration: none;
     font-size: 0.875rem;
     transition: color 0.15s ease;
 }
 
 .back-link:hover {
-    color: var(--lavender);
+    color: var(--ctp-lavender);
 }
 
 .container {
@@ -79,13 +79,13 @@ header {
 }
 
 header h1 {
-    color: var(--blue);
+    color: var(--ctp-blue);
     font-size: 2rem;
     margin-bottom: 0.5rem;
 }
 
 header p {
-    color: var(--subtext0);
+    color: var(--ctp-subtext0);
     font-size: 0.95rem;
 }
 
@@ -109,15 +109,15 @@ main {
 }
 
 h2 {
-    color: var(--subtext1);
+    color: var(--ctp-subtext1);
     font-size: 1rem;
     font-weight: 600;
     margin-bottom: 0.75rem;
 }
 
 .metadata-section {
-    background-color: var(--mantle);
-    border: 2px solid var(--surface0);
+    background-color: var(--ctp-mantle);
+    border: 2px solid var(--ctp-surface0);
     border-radius: 8px;
     padding: 1.5rem;
 }
@@ -135,16 +135,16 @@ h2 {
 }
 
 label {
-    color: var(--subtext1);
+    color: var(--ctp-subtext1);
     font-size: 0.9rem;
     font-weight: 600;
 }
 
 input[type="text"],
 select {
-    background-color: var(--surface0);
-    color: var(--text);
-    border: 2px solid var(--surface1);
+    background-color: var(--ctp-surface0);
+    color: var(--ctp-text);
+    border: 2px solid var(--ctp-surface1);
     border-radius: 8px;
     padding: 0.6rem 0.8rem;
     font-family: var(--font-family);
@@ -155,11 +155,11 @@ select {
 input[type="text"]:focus,
 select:focus {
     outline: none;
-    border-color: var(--blue);
+    border-color: var(--ctp-blue);
 }
 
 input[type="text"]::placeholder {
-    color: var(--overlay0);
+    color: var(--ctp-overlay0);
 }
 
 select {
@@ -172,9 +172,9 @@ select {
 }
 
 textarea {
-    background-color: var(--surface0);
-    color: var(--text);
-    border: 2px solid var(--surface1);
+    background-color: var(--ctp-surface0);
+    color: var(--ctp-text);
+    border: 2px solid var(--ctp-surface1);
     border-radius: 8px;
     padding: 1rem;
     font-family: 'Consolas', 'Courier New', monospace;
@@ -186,11 +186,11 @@ textarea {
 
 textarea:focus {
     outline: none;
-    border-color: var(--blue);
+    border-color: var(--ctp-blue);
 }
 
 textarea::placeholder {
-    color: var(--overlay0);
+    color: var(--ctp-overlay0);
 }
 
 .button-row {
@@ -199,8 +199,8 @@ textarea::placeholder {
 }
 
 button {
-    background-color: var(--blue);
-    color: var(--crust);
+    background-color: var(--ctp-blue);
+    color: var(--ctp-crust);
     border: none;
     border-radius: 8px;
     padding: 0.6rem 1.2rem;
@@ -211,7 +211,7 @@ button {
 }
 
 button:hover:not(:disabled) {
-    background-color: var(--lavender);
+    background-color: var(--ctp-lavender);
     transform: translateY(-1px);
 }
 
@@ -220,35 +220,35 @@ button:active:not(:disabled) {
 }
 
 button:disabled {
-    background-color: var(--surface1);
-    color: var(--overlay0);
+    background-color: var(--ctp-surface1);
+    color: var(--ctp-overlay0);
     cursor: not-allowed;
 }
 
 button.secondary {
-    background-color: var(--surface1);
-    color: var(--subtext0);
+    background-color: var(--ctp-surface1);
+    color: var(--ctp-subtext0);
 }
 
 button.secondary:hover:not(:disabled) {
-    background-color: var(--surface2);
-    color: var(--text);
+    background-color: var(--ctp-surface2);
+    color: var(--ctp-text);
 }
 
 button.success-flash {
-    background-color: var(--green) !important;
-    color: var(--crust) !important;
+    background-color: var(--ctp-green) !important;
+    color: var(--ctp-crust) !important;
 }
 
 footer {
     text-align: center;
     margin-top: 2rem;
     padding-top: 1rem;
-    border-top: 1px solid var(--surface0);
+    border-top: 1px solid var(--ctp-surface0);
 }
 
 footer p {
-    color: var(--overlay0);
+    color: var(--ctp-overlay0);
     font-size: 0.8rem;
 }
 

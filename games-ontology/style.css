@@ -6,9 +6,9 @@
     --ctp-base: #1e1e2e;
     --ctp-mantle: #181825;
     --ctp-crust: #11111b;
-    --ctp-surface-0: #313244;
-    --ctp-surface-1: #45475a;
-    --ctp-subtext-0: #a6adc8;
+    --ctp-surface0: #313244;
+    --ctp-surface1: #45475a;
+    --ctp-subtext0: #a6adc8;
     --ctp-text: #cdd6f4;
     --ctp-lavender: #b4befe;
     --ctp-blue: #89b4fa;
@@ -62,7 +62,7 @@ body {
 header {
     height: var(--header-height);
     background-color: var(--ctp-mantle);
-    border-bottom: 1px solid var(--ctp-surface-1);
+    border-bottom: 1px solid var(--ctp-surface1);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -85,8 +85,8 @@ header h1 {
 }
 
 #search-input {
-    background-color: var(--ctp-surface-0);
-    border: 1px solid var(--ctp-surface-1);
+    background-color: var(--ctp-surface0);
+    border: 1px solid var(--ctp-surface1);
     border-radius: 8px;
     padding: 8px 40px 8px 16px;
     color: var(--ctp-text);
@@ -101,7 +101,7 @@ header h1 {
 }
 
 #search-input::placeholder {
-    color: var(--ctp-subtext-0);
+    color: var(--ctp-subtext0);
 }
 
 #search-clear {
@@ -109,7 +109,7 @@ header h1 {
     right: 8px;
     background: none;
     border: none;
-    color: var(--ctp-subtext-0);
+    color: var(--ctp-subtext0);
     font-size: 1.2rem;
     cursor: pointer;
     padding: 4px 8px;
@@ -143,7 +143,7 @@ header h1 {
 .sidebar {
     width: var(--sidebar-width);
     background-color: var(--ctp-mantle);
-    border-left: 1px solid var(--ctp-surface-1);
+    border-left: 1px solid var(--ctp-surface1);
     display: flex;
     flex-direction: column;
     overflow-y: auto;
@@ -158,7 +158,7 @@ header h1 {
     font-size: 0.85rem;
     text-transform: uppercase;
     letter-spacing: 1px;
-    color: var(--ctp-subtext-0);
+    color: var(--ctp-subtext0);
     font-weight: 600;
 }
 
@@ -175,7 +175,7 @@ header h1 {
     align-items: center;
     gap: 10px;
     font-size: 0.85rem;
-    color: var(--ctp-subtext-0);
+    color: var(--ctp-subtext0);
 }
 
 .legend-swatch {
@@ -191,7 +191,7 @@ header h1 {
 
 /* Detail Panel */
 .detail-panel {
-    border-top: 1px solid var(--ctp-surface-1);
+    border-top: 1px solid var(--ctp-surface1);
     padding: 16px 20px;
     flex: 1;
     overflow-y: auto;
@@ -213,7 +213,7 @@ header h1 {
 #detail-close {
     background: none;
     border: none;
-    color: var(--ctp-subtext-0);
+    color: var(--ctp-subtext0);
     font-size: 1.2rem;
     cursor: pointer;
     padding: 4px;
@@ -225,7 +225,7 @@ header h1 {
 }
 
 .detail-placeholder {
-    color: var(--ctp-subtext-0);
+    color: var(--ctp-subtext0);
     font-size: 0.85rem;
     font-style: italic;
 }
@@ -238,7 +238,7 @@ header h1 {
     font-size: 0.75rem;
     text-transform: uppercase;
     letter-spacing: 0.5px;
-    color: var(--ctp-subtext-0);
+    color: var(--ctp-subtext0);
     margin-bottom: 4px;
     font-weight: 600;
 }
@@ -258,7 +258,7 @@ header h1 {
 
 .detail-list li {
     font-size: 0.85rem;
-    color: var(--ctp-subtext-0);
+    color: var(--ctp-subtext0);
     padding-left: 12px;
     position: relative;
 }
@@ -274,7 +274,7 @@ header h1 {
 .tooltip {
     position: fixed;
     background-color: var(--ctp-crust);
-    border: 1px solid var(--ctp-surface-1);
+    border: 1px solid var(--ctp-surface1);
     border-radius: 6px;
     padding: 8px 12px;
     font-size: 0.8rem;
@@ -297,7 +297,7 @@ header h1 {
 }
 
 .tooltip-type {
-    color: var(--ctp-subtext-0);
+    color: var(--ctp-subtext0);
     text-transform: capitalize;
 }
 
@@ -305,7 +305,7 @@ header h1 {
 footer {
     height: var(--footer-height);
     background-color: var(--ctp-mantle);
-    border-top: 1px solid var(--ctp-surface-1);
+    border-top: 1px solid var(--ctp-surface1);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -324,7 +324,7 @@ footer a:hover {
 
 /* SVG Styles */
 .link {
-    stroke: var(--ctp-surface-1);
+    stroke: var(--ctp-surface1);
     stroke-width: 1.5;
     transition: stroke 0.2s, opacity 0.2s;
 }
@@ -419,7 +419,7 @@ footer a:hover {
         width: 100%;
         max-height: 200px;
         border-left: none;
-        border-top: 1px solid var(--ctp-surface-1);
+        border-top: 1px solid var(--ctp-surface1);
     }
 
     header {

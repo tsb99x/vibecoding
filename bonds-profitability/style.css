@@ -1,31 +1,31 @@
 /* Catppuccin Mocha Palette */
 :root {
-  --base: #1e1e2e;
-  --mantle: #181825;
-  --crust: #11111b;
-  --surface0: #313244;
-  --surface1: #45475a;
-  --surface2: #585b70;
-  --overlay0: #6c7086;
-  --overlay1: #7f849c;
-  --overlay2: #9399b2;
-  --subtext0: #a6adc8;
-  --subtext1: #bac2de;
-  --text: #cdd6f4;
-  --lavender: #b4befe;
-  --blue: #89b4fa;
-  --sapphire: #74c7ec;
-  --sky: #89dceb;
-  --teal: #94e2d5;
-  --green: #a6e3a1;
-  --yellow: #f9e2af;
-  --peach: #fab387;
-  --maroon: #eba0ac;
-  --red: #f38ba8;
-  --mauve: #cba6f7;
-  --pink: #f5c2e7;
-  --flamingo: #f2cdcd;
-  --rosewater: #f5e0dc;
+  --ctp-base: #1e1e2e;
+  --ctp-mantle: #181825;
+  --ctp-crust: #11111b;
+  --ctp-surface0: #313244;
+  --ctp-surface1: #45475a;
+  --ctp-surface2: #585b70;
+  --ctp-overlay0: #6c7086;
+  --ctp-overlay1: #7f849c;
+  --ctp-overlay2: #9399b2;
+  --ctp-subtext0: #a6adc8;
+  --ctp-subtext1: #bac2de;
+  --ctp-text: #cdd6f4;
+  --ctp-lavender: #b4befe;
+  --ctp-blue: #89b4fa;
+  --ctp-sapphire: #74c7ec;
+  --ctp-sky: #89dceb;
+  --ctp-teal: #94e2d5;
+  --ctp-green: #a6e3a1;
+  --ctp-yellow: #f9e2af;
+  --ctp-peach: #fab387;
+  --ctp-maroon: #eba0ac;
+  --ctp-red: #f38ba8;
+  --ctp-mauve: #cba6f7;
+  --ctp-pink: #f5c2e7;
+  --ctp-flamingo: #f2cdcd;
+  --ctp-rosewater: #f5e0dc;
 }
 
 * {
@@ -35,8 +35,8 @@
 }
 
 body {
-  background-color: var(--base);
-  color: var(--text);
+  background-color: var(--ctp-base);
+  color: var(--ctp-text);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   display: flex;
   flex-direction: column;
@@ -47,27 +47,27 @@ body {
 
 .top-nav {
   width: 100%;
-  background-color: var(--mantle);
+  background-color: var(--ctp-mantle);
   padding: 0.75rem 1rem;
   display: flex;
   justify-content: center;
-  border-bottom: 1px solid var(--surface1);
+  border-bottom: 1px solid var(--ctp-surface1);
 }
 
 .back-link {
-  color: var(--blue);
+  color: var(--ctp-blue);
   text-decoration: none;
   font-size: 0.875rem;
   transition: color 0.15s ease;
 }
 
 .back-link:hover {
-  color: var(--lavender);
+  color: var(--ctp-lavender);
 }
 
 .container {
-  background-color: var(--mantle);
-  border: 1px solid var(--surface0);
+  background-color: var(--ctp-mantle);
+  border: 1px solid var(--ctp-surface0);
   border-radius: 12px;
   padding: 40px;
   max-width: 500px;
@@ -78,7 +78,7 @@ body {
 
 h1 {
   text-align: center;
-  color: var(--lavender);
+  color: var(--ctp-lavender);
   margin-bottom: 30px;
   font-size: 1.6rem;
   font-weight: 600;
@@ -95,7 +95,7 @@ header {
 
 label {
   display: block;
-  color: var(--subtext0);
+  color: var(--ctp-subtext0);
   margin-bottom: 6px;
   font-size: 0.9rem;
   font-weight: 500;
@@ -105,10 +105,10 @@ input[type="number"],
 select {
   width: 100%;
   padding: 10px 14px;
-  background-color: var(--surface0);
-  border: 1px solid var(--surface1);
+  background-color: var(--ctp-surface0);
+  border: 1px solid var(--ctp-surface1);
   border-radius: 8px;
-  color: var(--text);
+  color: var(--ctp-text);
   font-size: 1rem;
   outline: none;
   transition: border-color 0.2s ease;
@@ -116,23 +116,23 @@ select {
 
 input[type="number"]:focus,
 select:focus {
-  border-color: var(--blue);
+  border-color: var(--ctp-blue);
 }
 
 input[type="number"]::placeholder {
-  color: var(--overlay0);
+  color: var(--ctp-overlay0);
 }
 
 select option {
-  background-color: var(--surface0);
-  color: var(--text);
+  background-color: var(--ctp-surface0);
+  color: var(--ctp-text);
 }
 
 button {
   width: 100%;
   padding: 12px;
-  background-color: var(--blue);
-  color: var(--crust);
+  background-color: var(--ctp-blue);
+  color: var(--ctp-crust);
   border: none;
   border-radius: 8px;
   font-size: 1rem;
@@ -143,7 +143,7 @@ button {
 }
 
 button:hover {
-  background-color: var(--lavender);
+  background-color: var(--ctp-lavender);
 }
 
 button:active {
@@ -153,13 +153,13 @@ button:active {
 .results {
   margin-top: 30px;
   padding: 20px;
-  background-color: var(--surface0);
+  background-color: var(--ctp-surface0);
   border-radius: 10px;
   display: none;
 }
 
 .results h2 {
-  color: var(--mauve);
+  color: var(--ctp-mauve);
   font-size: 1.1rem;
   margin-bottom: 16px;
   text-align: center;
@@ -170,7 +170,7 @@ button:active {
   justify-content: space-between;
   align-items: center;
   padding: 10px 0;
-  border-bottom: 1px solid var(--surface1);
+  border-bottom: 1px solid var(--ctp-surface1);
 }
 
 .result-item:last-child {
@@ -178,7 +178,7 @@ button:active {
 }
 
 .result-label {
-  color: var(--subtext0);
+  color: var(--ctp-subtext0);
   font-size: 0.9rem;
 }
 
@@ -191,20 +191,20 @@ button:active {
 .result-value {
   font-weight: 600;
   font-size: 1rem;
-  color: var(--text);
+  color: var(--ctp-text);
 }
 
 .result-value.positive {
-  color: var(--green);
+  color: var(--ctp-green);
 }
 
 .result-value.negative {
-  color: var(--red);
+  color: var(--ctp-red);
 }
 
 .result-formula {
   display: block;
-  color: var(--overlay1);
+  color: var(--ctp-overlay1);
   font-size: 0.75rem;
   font-weight: 400;
   margin-top: 2px;
@@ -212,7 +212,7 @@ button:active {
 }
 
 .error-message {
-  color: var(--red);
+  color: var(--ctp-red);
   text-align: center;
   margin-top: 10px;
   font-size: 0.9rem;

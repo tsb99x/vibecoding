@@ -3,9 +3,9 @@
   --ctp-base: #1e1e2e;
   --ctp-mantle: #181825;
   --ctp-crust: #11111b;
-  --ctp-surface-0: #313244;
-  --ctp-surface-1: #45475a;
-  --ctp-subtext-0: #a6adc8;
+  --ctp-surface0: #313244;
+  --ctp-surface1: #45475a;
+  --ctp-subtext0: #a6adc8;
   --ctp-text: #cdd6f4;
   --ctp-lavender: #b4befe;
   --ctp-blue: #89b4fa;
@@ -61,13 +61,13 @@ header h1 {
   text-decoration: none;
   font-size: 0.9rem;
   padding: 0.5rem 1rem;
-  border: 1px solid var(--ctp-surface-1);
+  border: 1px solid var(--ctp-surface1);
   border-radius: 0.5rem;
   transition: background-color 0.2s, border-color 0.2s;
 }
 
 .back-btn:hover {
-  background-color: var(--ctp-surface-0);
+  background-color: var(--ctp-surface0);
   border-color: var(--ctp-blue);
 }
 
@@ -88,7 +88,7 @@ header h1 {
   padding: 0.75rem;
   background-color: var(--ctp-mantle);
   border-radius: 0.75rem;
-  border: 1px solid var(--ctp-surface-1);
+  border: 1px solid var(--ctp-surface1);
 }
 
 .info-item {
@@ -98,7 +98,7 @@ header h1 {
 }
 
 .info-item .label {
-  color: var(--ctp-subtext-0);
+  color: var(--ctp-subtext0);
   font-size: 0.9rem;
 }
 
@@ -111,7 +111,7 @@ header h1 {
 /* Canvas */
 #gameCanvas {
   background-color: var(--ctp-crust);
-  border: 2px solid var(--ctp-surface-1);
+  border: 2px solid var(--ctp-surface1);
   border-radius: 0.5rem;
   display: block;
   max-width: 100%;
@@ -127,9 +127,9 @@ header h1 {
 }
 
 .controls button {
-  background-color: var(--ctp-surface-0);
+  background-color: var(--ctp-surface0);
   color: var(--ctp-text);
-  border: 1px solid var(--ctp-surface-1);
+  border: 1px solid var(--ctp-surface1);
   padding: 0.6rem 1.5rem;
   border-radius: 0.5rem;
   font-size: 0.95rem;
@@ -164,7 +164,7 @@ header h1 {
 
 .overlay-content {
   background-color: var(--ctp-mantle);
-  border: 2px solid var(--ctp-surface-1);
+  border: 2px solid var(--ctp-surface1);
   border-radius: 1rem;
   padding: 2.5rem;
   text-align: center;
@@ -179,7 +179,7 @@ header h1 {
 }
 
 .overlay-content p {
-  color: var(--ctp-subtext-0);
+  color: var(--ctp-subtext0);
   margin-bottom: 1.5rem;
   font-size: 1rem;
 }

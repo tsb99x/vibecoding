@@ -1,38 +1,44 @@
 # AGENTS.md — Root Directory
 
-This is the root of the repository. It contains the GitHub Pages landing page (`index.html`) and links to the subprojects.
+This repository hosts static single-page web applications organized as independent subprojects. There is **no build step**, **no package manager**, and **no bundlers** — everything is raw HTML, CSS, and JavaScript served directly by GitHub Pages.
 
 ## Subprojects
 
-Each subfolder is an independent project with its own `AGENTS.md` that describes its structure, constraints, and preferences.
+Each subfolder is an independent project with its own `AGENTS.md` describing its structure, constraints, and preferences. **Always read the subproject's AGENTS.md before making changes.**
 
 | Subproject | Description |
 |------------|-------------|
-| `bonds-profitability/` | Bond Profitability Calculator single-page web application |
+| `bonds-profitability/` | Bond Profitability Calculator SPA |
 | `cue-builder/` | CUE File Builder web application |
-| `snake-game/` | Classic Snake Game single-page web application |
-| `tldr/` | Linux TLDR Commands single-page web application |
-| `games-ontology/` | Games Ontology interactive knowledge graph visualizing game relationships |
-| `flash-cards/` | Chinese language learning flashcards for HSK vocabulary |
-| `arkanoid/` | Classic Arkanoid (brick breaker) single-page web application |
-| `text-adventure/` | Click-choice text adventure set on a damaged space station |
+| `snake-game/` | Classic Snake Game SPA |
+| `tldr/` | Linux TLDR Commands quick reference |
+| `games-ontology/` | Games Ontology interactive knowledge graph (D3.js) |
+| `flash-cards/` | Chinese HSK vocabulary flashcards |
+| `arkanoid/` | Classic Arkanoid (brick breaker) SPA |
+| `text-adventure/` | Click-choice text adventure (space station) |
 
-## Agent Instructions
+## Common Constraints (All Subprojects)
 
-Before making any changes, **always look into the relevant subproject's `AGENTS.md`** for detailed context, file structure, coding conventions, and constraints. The root `AGENTS.md` only serves as a navigation guide.
+- **Catppuccin Mocha theme only** — dark mode exclusively, no light mode toggle
+- **Separate files** — `index.html`, `style.css`, `script.js`; never inline CSS or JS in HTML
+- **No build tools** — no `package.json`, no npm, no TypeScript, no bundlers
+- **JSDoc with type hints** required in `script.js` for most subprojects
+- **"Back to Main Page"** button linking to `../index.html` on every subproject page
+- **Relative units preferred** (`rem`, `em`, `%`) where applicable
 
-### General Behavior
+## Adding a New Subproject
 
-- **Be concise**: Respond directly and technically. Avoid unnecessary conversation, filler phrases, or repeated summaries unless explicitly requested.
+1. Create folder with `index.html`, `style.css`, `script.js`, `AGENTS.md`, `README.md`
+2. Add card link in root `index.html` (matching `.project-card` pattern)
+3. Add entry to root `README.md` subprojects table
+4. Add entry to this `AGENTS.md` subprojects table
 
-### Common Requirements for All Subprojects
+## Deployment
 
-- Each subproject must have a `README.md` describing its purpose, features, and usage.
-- Each subproject page must include a **"Back to Main Page"** button that links to `../index.html` (or `index.html` if at root level), allowing users to navigate back to the main landing page.
-- Each subproject must be mentioned in the root's `README.md`.
-- Each subproject must be linked by a card on the root's `index.html`.
+- Automated via GitHub Actions (`.github/workflows/pages.yml`) on push to `master`
+- Deploys the entire repo root (`path: "."`), so all subprojects are served under their folder paths
 
-## Commit Details
+## Commit Messages
 
-- Commit details should be a list denoted with `-`.
-- Each commit message must start with a type prefix: `feat:`, `fix:`, `docs:`, `refactor:`, `style:`, `test:`, `chore:`, etc.
+- Must start with a type prefix: `feat:`, `fix:`, `docs:`, `refactor:`, `style:`, `chore:`, etc.
+- Details formatted as a list with `-`

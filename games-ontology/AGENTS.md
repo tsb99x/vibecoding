@@ -1,90 +1,46 @@
 # AGENTS.md — Games Ontology
 
 ## Project Overview
-An interactive knowledge graph web application that visualizes games and their relationships to various characteristics such as genre, year, studio, publisher, engine, game mode, and features. Users can explore how games connect through shared attributes. Uses **D3.js with SVG** for all graph rendering.
+Interactive knowledge graph visualizing games and their relationships (genre, year, studio, publisher, engine, game mode, features). Uses **D3.js v7 with SVG** rendering.
 
-## File Structure
-```
-games-ontology/
-├── index.html   — HTML structure with D3 CDN, search bar, legend, detail panel
-├── style.css    — All styling (Catppuccin Mocha theme)
-└── script.js    — D3 force graph, data model, interactions (all JSDoc annotated)
-```
+## Graph Visualization
+- Force-directed graph: games as circles, attributes as rounded rectangles
+- Node colors vary by type (see Node Types table)
+- Drag nodes to reposition; click highlights connections and dims unrelated nodes
+- Hover shows tooltip with node details
+- **Labels inside shapes** — attribute labels centered *inside* rectangles; game labels below circles
+- **Relative sizing** — attribute rectangle width scales to label length (no fixed pixels or type-specific multipliers)
+- **Collision radii** — calculated from content size via `getCollisionRadius()`, not hardcoded
 
-## Constraints
+## Node Sizing Rules
+- Attribute height: `TEXT_HEIGHT + vertical padding` (fixed)
+- Attribute width: `label.length * BASE_FONT_SIZE * CHAR_WIDTH_FACTOR + horizontalPadding`
+- Minimum width: 30 units; no type-specific width multipliers
 
-### Styling
-- **Use Catppuccin Mocha palette** exclusively.
-- **No light mode** — dark theme only, always.
+## Force Simulation
+- **Link distance:** 140 units
+- **Charge:** `-700` (game nodes), `-350` (attribute nodes)
+- **Center force:** 0.05; X/Y forces: 0.02
 
-### Code Organization
-- **Separate CSS and JS from HTML.** Keep styles in `style.css` and logic in `script.js`; never inline them in `index.html`.
-- Each file has a single responsibility.
-- **JSDoc with type hints required.** All variables, constants, and functions must include JSDoc comments with proper `@typedef`, `@type`, parameter types, and return type annotations.
-
-### Graph Visualization
-- Render an interactive force-directed graph using **D3.js v7 with SVG** rendering (no raw Canvas)
-- Nodes represent games (circles) and attributes (rounded rectangles)
-- Edges represent relationships between games and their attributes
-- Node colors vary by type (see Node Types & Colors table below)
-- Users can drag nodes to reposition them
-- Clicking a node highlights its connections and dims unrelated nodes
-- Hovering shows a tooltip with node details
-- **Labels inside shapes** — attribute node labels must be centered *inside* their rectangles; game node labels remain below circles
-- **Relative, content-based sizing** — attribute rectangle width scales proportionally to label length (no fixed pixel dimensions or type-specific multipliers)
-- **Collision radii are relative** — calculated from content size, not hardcoded
-
-### Node Sizing Rules
-- Attribute rectangle height is fixed (`TEXT_HEIGHT + vertical padding`)
-- Attribute rectangle width calculated from label length using text-width formula: `label.length * BASE_FONT_SIZE * CHAR_WIDTH_FACTOR + horizontalPadding`
-- Minimum width of 30 units ensures readability for very short labels
-- No type-specific width multipliers (all attribute types use the same formula)
-
-### Force Simulation Parameters
-- **Link distance**: 140 units between connected nodes to maintain sparse, readable layout
-- **Charge repulsion strength**: `-700` for game nodes, `-350` for attribute nodes
-- Collision radii are calculated from content size via `getCollisionRadius()`
-- Center force strength: 0.05; X/Y positioning forces: 0.02
-
-### Data Model
-- Games have: name, year, genre(s), studio, publisher, engine, game mode, features
+## Data Model
+- Games: name, year, genre(s), studio, publisher, engine, game mode, features
 - Attribute types: `game`, `genre`, `year`, `studio`, `publisher`, `engine`, `gamemode`, `feature`
-- Sample data included with 9 cataloged games demonstrating the graph
+- Sample data: 9 cataloged games
 
-### Features
-- Search/filter to highlight specific games or attributes
-- Zoom and pan support on the SVG container
-- Legend showing node types and their colors
-- Collapsible detail panel on node selection showing all relationships
-
-## Catppuccin Mocha Colors (Reference)
-| Token      | Hex      | Usage                             |
-|------------|----------|-----------------------------------|
-| Base       | `#1e1e2e`| Main background                   |
-| Mantle     | `#181825`| Container/surface bg              |
-| Crust      | `#11111b`| Darkest elements                  |
-| Surface 0  | `#313244`| Inputs, cards                     |
-| Surface 1  | `#45475a`| Borders, dividers                 |
-| Subtext 0  | `#a6adc8`| Labels, secondary text            |
-| Text       | `#cdd6f4`| Primary text                      |
-| Lavender   | `#b4befe`| Headings, studio nodes            |
-| Blue       | `#89b4fa`| Buttons, focus borders, year nodes|
-| Mauve      | `#cba6f7`| Section titles, game nodes        |
-| Green      | `#a6e3a1`| Genre nodes                       |
-| Red        | `#f38ba8`| Errors                            |
-| Peach      | `#fab387`| Publisher nodes                   |
-| Yellow     | `#f9e2af`| Engine nodes                      |
-| Flint      | `#9399b2`| GameMode nodes                    |
-| Rosewater  | `#f5c2e7`| Feature nodes                     |
+## Features
+- Search/filter to highlight games or attributes
+- Zoom and pan on SVG container
+- Legend showing node types and colors
+- Collapsible detail panel on node selection
 
 ## Node Types & Colors
-| Node Type   | Color      | Shape              |
-|-------------|------------|-------------------|
-| Game        | Mauve      | Circle             |
-| Genre       | Green      | Rounded rectangle  |
-| Year        | Blue       | Rounded rectangle  |
-| Studio      | Lavender   | Rounded rectangle  |
-| Publisher   | Peach      | Rounded rectangle  |
-| Engine      | Yellow     | Rounded rectangle  |
-| GameMode    | Flint      | Rounded rectangle  |
-| Feature     | Rosewater  | Rounded rectangle  |
+| Node Type | Color   | Shape             |
+|-----------|---------|-------------------|
+| Game      | Mauve   | Circle            |
+| Genre     | Green   | Rounded rectangle |
+| Year      | Blue    | Rounded rectangle |
+| Studio    | Lavender| Rounded rectangle |
+| Publisher | Peach   | Rounded rectangle |
+| Engine    | Yellow  | Rounded rectangle |
+| GameMode  | Flint   | Rounded rectangle |
+| Feature   | Rosewater| Rounded rectangle|
