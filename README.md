@@ -15,7 +15,6 @@ This is a repository for my vibecoding experiments. This project explores the ac
 
 - **Backend**: [llama.cpp](https://github.com/ggml-org/llama.cpp) (Vulkan backend) on Sapphire Pulse RX 7900 XTX (24G VRAM), managed via [llama-swap](https://github.com/mostlygeek/llama-swap), on Debian Trixie
 - **GPU Tuning**: [LACT](https://github.com/ilya-zlobintsev/LACT) is used to limit GPU clocks to 1929 MHz and fan speed to 40% for reduced noise
-- **Model**: [Qwen3.6-27B-GGUF](https://huggingface.co/unsloth/Qwen3.6-27B-GGUF) (Unsloth version) running with 64k context window
 - **AI Agent**: [OpenCode](https://github.com/anomalyco/opencode)
 
 ## Web Page
@@ -28,16 +27,16 @@ This is a repository for my vibecoding experiments. This project explores the ac
 
 ## Subprojects
 
-| Subproject | Description |
-|------------|-------------|
-| [`bonds-profitability/`](bonds-profitability/) | Bond Profitability Calculator single-page web application |
-| [`cue-builder/`](cue-builder/) | CUE File Builder web application |
-| [`snake-game/`](snake-game/) | Classic Snake Game single-page web application |
-| [`tldr/`](tldr/) | Linux TLDR Commands single-page web application |
-| [`games-ontology/`](games-ontology/) | Games Ontology interactive knowledge graph visualizing game relationships |
-| [`flash-cards/`](flash-cards/) | Chinese language learning flashcards for HSK vocabulary |
-| [`arkanoid/`](arkanoid/) | Classic Arkanoid (brick breaker) single-page web application |
-| [`text-adventure/`](text-adventure/) | Click-choice text adventure set on a damaged space station |
+| Subproject | Model | Description |
+|------------|-------|-------------|
+| [`bonds-profitability/`](bonds-profitability/) | qwen3.6:27b | Bond Profitability Calculator single-page web application |
+| [`cue-builder/`](cue-builder/) | qwen3.6:27b | CUE File Builder web application |
+| [`snake-game/`](snake-game/) | qwen3.6:27b | Classic Snake Game single-page web application |
+| [`tldr/`](tldr/) | qwen3.6:27b | Linux TLDR Commands single-page web application |
+| [`games-ontology/`](games-ontology/) | qwen3.6:27b | Games Ontology interactive knowledge graph visualizing game relationships |
+| [`flash-cards/`](flash-cards/) | qwen3.6:27b | Chinese language learning flashcards for HSK vocabulary |
+| [`arkanoid/`](arkanoid/) | qwen3.6:27b | Classic Arkanoid (brick breaker) single-page web application |
+| [`text-adventure/`](text-adventure/) | qwen3.6:27b | Click-choice text adventure set on a damaged space station |
 
 ## Workflow
 
